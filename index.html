@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>My Playground</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1 id="greeting">Hello, world!</h1>
+        <button id="btn">Click me</button>
+        <script src="script.js"></script>
+    </body>
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مكتبة أحمد للطباعة - الإسماعيلية نفيشة شارع القسم - 01023895569</title>
+<meta name="description" content="مكتبة أحمد للطباعة - طباعة كتب ومجلات وأوراق وتغليف احترافي - الإسماعيلية نفيشة شارع القسم - 01023895569 - 01274936911">
+<meta name="keywords" content="مكتبة أحمد, طباعة كتب, طباعة مجلات, نفيشة شارع القسم">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://maktabet-ahmed.com">
+</head>
+<body id="body" style="margin:0;font-family:Tahoma;background:#f8faff">
+<div style="background:white;padding:12px 15px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px #0001;position:sticky;top:0" id="header">
+<b style="color:#0d47a1">مكتبة أحمد للطباعة</b>
+<div>
+<button onclick="myLang()" style="border:1px solid #0d47a1;background:white;color:#0d47a1;padding:6px 12px;border-radius:20px">EN</button>
+<button onclick="dark()" style="border:none;background:#0d2a54;color:white;padding:6px 12px;border-radius:20px;margin-right:5px">🌙</button>
+</div>
+</div>
+<div style="background:#e3f2fd;padding:35px 15px;text-align:center" id="hero">
+<h1 id="t1" style="color:#0d2a54">لطباعة الكتب والمجلات والأوراق وتغليف الكتب بطريقة احترافية</h1>
+<p id="t2" style="max-width:700px;margin:15px auto;line-height:1.8">في مكتبة أحمد بنقدم جودة طباعة عالية، ورق 70 و 80 جرام وكوشيه، هارد كفر وسلك وحراري ودبوس، وسعر على قد الإيد.</p>
+<p style="font-weight:bold;color:#0d47a1">📍 الإسماعيلية - نفيشة - شارع القسم</p>
+<p style="font-weight:bold">📞 01023895569 - 01274936911</p>
+<a href="https://wa.me/201023895569" style="background:#0d47a1;color:white;padding:13px 28px;border-radius:10px;text-decoration:none;display:inline-block;margin-top:10px">اطلب على واتساب</a>
+</div>
+<div style="padding:25px 12px;max-width:900px;margin:auto">
+<h2 id="t3" style="text-align:center;color:#0d2a54">خدماتنا</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px">
+<div class="card" style="background:white;padding:18px;border-radius:12px;text-align:center;box-shadow:0 2px 8px #0001">📚<br><b>طباعة كتب</b><br><small>كتب كاملة غلاف وداخلي جودة عالية</small></div>
+<div class="card" style="background:white;padding:18px;border-radius:12px;text-align:center;box-shadow:0 2px 8px #0001">📰<br><b>طباعة مجلات</b><br><small>ألوان زاهية ورق كوشيه لامع</small></div>
+<div class="card" style="background:white;padding:18px;border-radius:12px;text-align:center;box-shadow:0 2px 8px #0001">📒<br><b>تغليف وتجليد</b><br><small>هارد كفر - سلك - حراري - دبوس</small></div>
+<div class="card" style="background:white;padding:18px;border-radius:12px;text-align:center;box-shadow:0 2px 8px #0001">📄<br><b>طباعة أوراق</b><br><small>A4 و A3 ألوان وأبيض وأسود</small></div>
+</div>
+</div>
+<div style="background:#0d2a54;color:white;padding:20px;text-align:center">
+<p>مكتبة أحمد - نفيشة شارع القسم</p>
+<p>01023895569 - 01274936911</p>
+</div>
+<script>
+var d=false;
+function dark(){
+d=!d;
+document.getElementById('body').style.background=d?'#0f172a':'#f8faff';
+document.getElementById('body').style.color=d?'white':'black';
+document.getElementById('header').style.background=d?'#1e293b':'white';
+document.getElementById('hero').style.background=d?'#1e293b':'#e3f2fd';
+var c=document.getElementsByClassName('card');
+for(var i=0;i<c.length;i++){c[i].style.background=d?'#1e293b':'white';c[i].style.color=d?'white':'black';}
+}
+var e=false;
+function myLang(){
+e=!e;
+var cr=document.getElementsByClassName('card');
+if(e){
+document.getElementById('t1').innerText='Professional Printing for Books, Magazines, Papers and Professional Book Binding';
+document.getElementById('t2').innerText='At Ahmed Printing we offer high quality printing, premium paper, professional binding at best price in Ismailia - Nafisha.';
+document.getElementById('t3').innerText='Our Services';
+cr[0].innerHTML='📚<br><b>Books Printing</b><br><small>Full cover & interior high quality</small>';
+cr[1].innerHTML='📰<br><b>Magazines Printing</b><br><small>Vivid colors glossy couche</small>';
+cr[2].innerHTML='📒<br><b>Binding & Covering</b><br><small>Hard cover - Spiral - Thermal</small>';
+cr[3].innerHTML='📄<br><b>Papers Printing</b><br><small>A4 & A3 color and B&W</small>';
+}else{
+document.getElementById('t1').innerText='لطباعة الكتب والمجلات والأوراق وتغليف الكتب بطريقة احترافية';
+document.getElementById('t2').innerText='في مكتبة أحمد بنقدم جودة طباعة عالية، ورق 70 و 80 جرام وكوشيه، هارد كفر وسلك وحراري ودبوس، وسعر على قد الإيد.';
+document.getElementById('t3').innerText='خدماتنا';
+cr[0].innerHTML='📚<br><b>طباعة كتب</b><br><small>كتب كاملة غلاف وداخلي جودة عالية</small>';
+cr[1].innerHTML='📰<br><b>طباعة مجلات</b><br><small>ألوان زاهية ورق كوشيه لامع</small>';
+cr[2].innerHTML='📒<br><b>تغليف وتجليد</b><br><small>هارد كفر - سلك - حراري - دبوس</small>';
+cr[3].innerHTML='📄<br><b>طباعة أوراق</b><br><small>A4 و A3 ألوان وأبيض وأسود</small>';
+}
+}
+</script>
+</body>
+</html>
